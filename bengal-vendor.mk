@@ -5,6 +5,13 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/bengal
 
+ODM_MANIFEST_FILES += \
+    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_disabled.xml
+    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hce.xml
+    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hceese.xml
+    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hcesim.xml
+    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hcesimese.xml
+
 PRODUCT_COPY_FILES += \
     vendor/samsung/bengal/proprietary/etc/audio_effects.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.xml \
     vendor/samsung/bengal/proprietary/etc/audio_effects_common.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects_common.conf \
@@ -31,11 +38,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/bengal/proprietary/lib64/vendor.qti.hardware.display.config-V7-ndk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.display.config-V7-ndk.so \
     vendor/samsung/bengal/proprietary/lib64/vendor.qti.hardware.display.config-V8-ndk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.display.config-V8-ndk.so \
     vendor/samsung/bengal/proprietary/lib64/vendor.qti.hardware.display.config-V9-ndk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.display.config-V9-ndk.so \
-    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_disabled.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_disabled.xml \
-    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hce.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_hce.xml \
-    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hceese.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_hceese.xml \
-    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hcesim.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_hcesim.xml \
-    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hcesimese.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_hcesimese.xml \
     vendor/samsung/bengal/proprietary/product/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
     vendor/samsung/bengal/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/samsung/bengal/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
