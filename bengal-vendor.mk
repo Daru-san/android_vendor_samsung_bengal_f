@@ -6,10 +6,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/bengal
 
 ODM_MANIFEST_FILES += \
-    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_disabled.xml
-    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hce.xml
-    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hceese.xml
-    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hcesim.xml
+    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_disabled.xml \
+    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hce.xml \
+    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hceese.xml \
+    vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hcesim.xml \
     vendor/samsung/bengal/proprietary/odm/etc/vintf/manifest_hcesimese.xml
 
 PRODUCT_COPY_FILES += \
